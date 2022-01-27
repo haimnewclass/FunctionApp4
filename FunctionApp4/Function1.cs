@@ -22,7 +22,7 @@ namespace FunctionApp4
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");    //////////22222222222222222222222222222
+            log.LogInformation("C# HTTP trigger function processed a request.");    //////////44444444
             string name = req.Query["name"];
                
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
