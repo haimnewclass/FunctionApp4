@@ -12,7 +12,12 @@ namespace FunctionApp4
 {
     public static class Function1
     {
-        [FunctionName("Function1")]
+        /// <summary>
+        /// // new Bance
+        /// </summary>
+        /// <param name="req"></param>
+        /// <param name="log"></param>
+        /// <returns></returns>
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
